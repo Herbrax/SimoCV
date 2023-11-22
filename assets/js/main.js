@@ -160,7 +160,36 @@ function scrollUp(){
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
     if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
-window.addEventListener('scroll', scrollUp)
+function scrollHero() {
+    const scrollPosition = window.scrollY;
+    const heroSection = document.querySelector('.hero');
+    const header = document.querySelector('.scroll-header');
+
+    if (heroSection && header) {
+        const heroHeight = heroSection.offsetHeight;
+        const opacity = Math.max(1 - Math.min(scrollPosition / heroHeight, 1), 0.06);
+        heroSection.style.opacity = opacity;
+
+        // Check if the scroll position is past the hero section
+        if (scrollPosition > heroHeight) {
+            // Fix the header at the top
+            header.style.position = 'fixed';
+            header.style.top = '0';
+            header.style.width = '100%';
+            header.style.zIndex = '1000'; // Ensure it stays above other content
+        } else {
+            // Reset the header position
+            header.style.position = 'relative';
+        }
+    }
+}
+
+
+// Attach the scrollHero function to the scroll event
+window.addEventListener('scroll', scrollHero);
+
+
+
 
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')

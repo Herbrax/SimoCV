@@ -10,19 +10,19 @@
     --hue-color: 23; /*250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode first color --> Hex	#f9660b*/
-    --first-color: hsl(var(--hue-color), 95%, 51%);   
-    --first-color-second: hsl(var(--hue-color), 95%, 51%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
-    --text-color-light: hsl(var(--hue-color), 8%, 65%);
-    --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-
+    --first-color: #022f66; /* Dark blue color */
+    --first-color-light: #8da7c7; /* Very light blue */
+    --title-color: #111111; /* You will need to provide the corresponding hex color */
+    --text-color: #737373; /* You will need to provide the corresponding hex color */
+    --input-color: #e6f1ff; /* Very light blue */
+    --body-color: #ffffff; /* Ye7e8fc */
+    --container-color: #fafafa;
+    --scroll-bar-color: #e6e6e6; /* You will need to provide the corresponding hex color */
+    --scroll-thumb-color: #cccccc; /* You will need to provide the corresponding hex color */
+    --hero-title: #9fb1b6  ;
+    --hero-subtitle: #9bb1b3;
+    --hero-bold: #435052  ;
+    --hero-icon: #abc3dc;
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
 
@@ -71,16 +71,38 @@
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  --first-color-second: hsl(var(--hue-color), 29%, 16%);
-  --title-color: hsl(var(--hue-color), 8%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 12%);
-  --container-color: hsl(var(--hue-color), 29%, 16%);
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --first-color: #fe7031; /* You will need to provide the corresponding hex color */
+  --first-color-light: #dbb69c; /* You will need to provide the corresponding hex color */
+  --title-color: #f2f2f2; /* You will need to provide the corresponding hex color */
+  --text-color: #656c76; /* You will need to provide the corresponding hex color */
+  --input-color: #272727; /* You will need to provide the corresponding hex color */
+  --body-color: #121212; /* You will need to provide the corresponding hex color */
+  --container-color: #272727; /* You will need to provide the corresponding hex color */
+  --scroll-bar-color: #424242; /* You will need to provide the corresponding hex color */
+  --scroll-thumb-color: #595959; /* You will need to provide the corresponding hex color */
+  --hero-title: #f39c12 ;
+  --hero-subtitle: #ffffff ;
+  --hero-bold: #ffffff;
+  --hero-icon: #ff7c11 ;
+}
+.hero__image__dark {
+  display: none;
+}
+body.dark-theme .hero__image {
+  display: none;
 }
 
+body.dark-theme .hero__image__dark {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('assets/img/landscape2.png') no-repeat center center;
+  background-size: cover;
+  z-index: -1000;
+}
 /*========== Button Dark/Light ==========*/
 .nav__btns{
   display: flex;
@@ -158,7 +180,7 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
+  max-width: 1000px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -169,6 +191,7 @@ img {
 }
 
 .header {
+  position: sticky;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -252,7 +275,7 @@ img {
 }
 
 .nav__close:hover{
-  color: var(--first-color-alt);
+  color: var(--first-color-light);
 }
 
 
@@ -294,7 +317,7 @@ img {
 }
 
 .home__social-icon:hover{
-  color: var(--first-color-alt);
+  color: var(--first-color-light);
 }
 
 .home__blob{
@@ -367,7 +390,7 @@ img {
 }
 
 .button:hover{
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color-light);
 }
 
 .button__icon{
@@ -403,7 +426,7 @@ img {
 
 .button--link:hover{
   background-color: transparent;
-  color: var(--first-color-alt);
+  color: var(--first-color-light);
 }
 
 
@@ -451,7 +474,20 @@ img {
 /*==================== SKILLS ====================*/
 .skills__container{
   row-gap: 0;
+  display: flex; /* Utilisez Flexbox */
+  justify-content: space-between; /* Espacement entre les éléments */
+  align-items: flex-start; /* Alignement vertical au début */
 }
+
+.skills__area {
+    flex: 1; /* Chaque section prend une part égale */
+    margin-right: 10px; /* Espace à droite si nécessaire */
+}
+
+.skills__area:last-child {
+    margin-right: 0; /* Pas d'espace à droite pour le dernier élément */
+}
+
 
 .skills__header{
   display: flex;
@@ -506,7 +542,7 @@ img {
 
 
 .skills__bar{
-  background-color: var(--first-color-lighter);
+  background-color: var(--first-color-light);
 }
 
 
@@ -514,6 +550,7 @@ img {
   display: block;
   background-color: var(--first-color);
 }
+
 
 .skills__sys-code{
   width: 100%;
@@ -579,20 +616,39 @@ img {
   column-gap: 1.5rem;
 }
 
+.qualification__details {
+    font-size: var(--small-font-size); /* A bit smaller than the default text */
+    color: var(--text-color-light); /* Lighter color for subtlety */
+    display: block; /* Display as block-level element */
+    margin-top: var(--mb-0-5); /* Margin top for spacing */
+    text-align: justify; /* Justify the text for better readability */
+}
+
+
 .qualification__title{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
-
-.qualification__subtitle{
+.category-title {
+  font-size: 20px; 
+  font-weight: bold; 
+  margin-bottom: 10px; 
+  text-align: center;
+  display: block; 
+  width: 100%; 
+}
+.qualification__subtitle {
   display: inline-block;
+  color: var(--first-color-light);
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
 }
-.qualification__degree{
+
+.qualification__degree {
   display: inline-block;
   font-size: var(--smaller-font-size);
   margin-bottom: var(--mb-0);
+  color: var(--first-color); /* Changed to use first-color */
 }
 
 .qualification__calendar{
@@ -870,6 +926,21 @@ img {
   bottom: 0;
 }
 
+.testimonial__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial__content {
+  /* Add your styling for the testimonial content here */
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial__container {
+      grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+}
 
 /*==================== VIDEOS ====================*/
 
@@ -1006,7 +1077,7 @@ img {
 }
 
 .footer__bg{
-  background-color: var(--first-color-second);
+  background-color: var(--first-color);
   padding: 2rem 0 3rem;
 }
 
@@ -1027,7 +1098,7 @@ img {
 }
 
 .footer__link:hover{
-  color: var(--first-color-lighter);
+  color: var(--first-color-light);
 }
 
 
@@ -1037,7 +1108,7 @@ img {
 }
 
 .footer__social:hover{
-  color: var(--first-color-lighter);
+  color: var(--first-color-light);
 }
 
 
@@ -1072,7 +1143,7 @@ img {
 }
 
 .scrollup:hover{
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color-light);
 }
 /* Show scroll */
 
@@ -1310,9 +1381,7 @@ img {
     justify-content: initial;
   }
 
-  .qualification__tabs{
-    justify-content: center;
-  }
+
 
   .qualification__button{
     margin: 0 var(--mb-1);
@@ -1322,6 +1391,27 @@ img {
     grid-template-columns: .5fr;
   }
 
+  .qualification__container {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    
+}
+.qualification__content {
+  flex: 1; /* This ensures that both children of .qualification__container take up equal space */
+}
+.qualification__tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.qualification__vertical-line {
+  width: 1px; /* Épaisseur de la ligne */
+  background-color: #ccc; /* Couleur de la ligne */
+  align-self: stretch; /* S'étend sur toute la hauteur */
+}
   .projects__container{
     grid-template-columns: repeat(3, 218px);
     justify-content: center;
@@ -1444,3 +1534,191 @@ img {
 
 }
 
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero__image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('assets/img/landscape.png') no-repeat center center;
+  background-size: cover;
+  z-index: -1000;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2; /* Ensure it's above the image */
+}
+
+
+
+/* Navigation Container */
+.nav {
+  position: relative; /* Adjust based on your layout needs */
+  z-index: 1; /* Lower than the hero section */
+  /* Other styling properties */
+}
+
+/* Header */
+.header {
+  position: relative; /* Adjust based on your layout */
+  z-index: 1; /* Ensures it's below the hero section */
+  /* Other styling properties */
+}
+
+hero-title, #hero-subtitle {
+    animation: fadeInUp 1s ease;
+}
+
+
+#hero-title {
+  font-size: 2.5em; /* Adjust size as needed */
+  color: var(--hero-title); /* Replace with your desired color */
+  animation: growFadeIn 2s ease;
+}
+
+#hero-title span {
+  font-weight: bold; /* Makes only the name bold */
+  color: var(--hero-bold); /* Replace with a different color for the name */
+}
+
+#hero-subtitle {
+  font-weight: bold;
+  font-size: 1.5em; /* Adjust size as needed */
+  color: var(--hero-subtitle); /* Replace with your desired color */
+  animation: fadeInUp 1.5s ease;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: inline-flex; /* Aligns the icons horizontally */
+    justify-content: center; /* Centers the icons */
+    animation: fadeInUpIcons 2s ease;
+
+}
+
+
+.icon-wrapper {
+  width: 60px; /* Increased size */
+  height: 60px;
+  border: 3px solid var(--hero-icon); /* Thicker border, replace with your color */
+  border-radius: 10px; /* Rounded corners */
+  transform: rotate(45deg); /* Tilts the square */
+  margin: 15px; /* More spacing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  pointer-events: auto; /* This ensures that the element is clickable */
+
+}
+
+.social-icon {
+  color: var(--hero-icon);
+  transform: rotate(-45deg); /* Counter-rotates the icon to keep it upright */
+  font-size: 24px; /* Adjust icon size as needed */
+}
+
+.icon-wrapper:hover {
+  border-color: var(--first-color-light);
+  transform: rotate(45deg) scale(1.15); /* Scales up the square on hover */
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes growFadeIn {
+  from {
+    opacity: 0.4;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUpIcons {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-downs {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 3; /* Higher than hero__image but lower than overlay content */
+}
+
+.mousey {
+  display: block;
+  margin: 0 auto;
+  width: 25px;
+  height: 45px;
+  border: 2px solid #fff; /* You can use any color that is visible on your hero image */
+  border-radius: 25px;
+  position: relative;
+  pointer-events: none;
+}
+
+.mousey .scroller {
+  display: block;
+  width: 3px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff; /* Same color as the mousey border */
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  animation: scroll-anim 2s infinite;
+}
+
+@keyframes scroll-anim {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(15px);
+    opacity: 0;
+  }
+}
