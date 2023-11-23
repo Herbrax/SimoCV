@@ -286,8 +286,8 @@ function SendMail(){
         message : document.getElementById("message").value
     }
     emailjs.send("service_4ajtfo5", "template_ryff15a", params).then(function (res){
-        // alert("Success! " + res.status);
-        // alert("Your message has been sent successfully!");
+        alert("Success! " + res.status);
+        alert("Your message has been sent successfully!");
         swal("Success!", "Your message has been sent!", "success");
     })
 }
