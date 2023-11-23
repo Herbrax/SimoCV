@@ -77,9 +77,6 @@ function scrollHero() {
         if (scrollPosition > heroHeight) {
             // Fix the header at the top
             header.style.position = 'fixed';
-            header.style.top = '0';
-            header.style.width = '100%';
-            header.style.zIndex = '1000'; // Ensure it stays above other content
         } else {
             // Reset the header position
             header.style.position = 'relative';

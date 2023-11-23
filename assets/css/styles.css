@@ -1316,7 +1316,6 @@ img {
   }
 
   .nav{
-    height: calc(var(--header-height) + 1.5rem);
     column-gap: 1rem;
   }
 
@@ -1722,4 +1721,3 @@ hero-title, #hero-subtitle {
     opacity: 0;
   }
 }
-
