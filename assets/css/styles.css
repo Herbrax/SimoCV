@@ -191,8 +191,8 @@ img {
 }
 
 .header {
-  position: sticky;
   width: 100%;
+  height: var(--header-height);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -1722,3 +1722,4 @@ hero-title, #hero-subtitle {
     opacity: 0;
   }
 }
+
