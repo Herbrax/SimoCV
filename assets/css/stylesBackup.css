@@ -11,24 +11,20 @@
 
     /* HSL color mode first color --> Hex	#f9660b*/
     /*<light mode>*/
-    --first-color: #022f66;
-    --first-color-light: #8da7c7;
-    --title-color: #111111;
-    --text-color: #737373;
-    --input-color: #e6f1ff;
-    --body-color: #ffffff;
+    --first-color: #022f66; /* Dark blue color */
+    --first-color-light: #8da7c7; /* Very light blue */
+    --title-color: #111111; /* You will need to provide the corresponding hex color */
+    --text-color: #737373; /* You will need to provide the corresponding hex color */
+    --input-color: #e6f1ff; /* Very light blue */
+    --body-color: #ffffff; /* Ye7e8fc */
     --container-color: #fafafa;
-    --scroll-bar-color: #e6e6e6;
-    --scroll-thumb-color: #cccccc;
-    --hero-title: #9fb1b6;
+    --scroll-bar-color: #e6e6e6; /* You will need to provide the corresponding hex color */
+    --scroll-thumb-color: #cccccc; /* You will need to provide the corresponding hex color */
+    --hero-title: #9fb1b6  ;
     --hero-subtitle: #9bb1b3;
-    --hero-bold: #435052;
+    --hero-bold: #435052  ;
     --hero-icon: #abc3dc;
     /*</light mode>*/
-
-
-
-
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
 
@@ -78,24 +74,20 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
   /*<dark mode>*/
-    --first-color: #fe7031;
-    --first-color-light: #dbb69c;
-    --title-color: #f2f2f2;
-    --text-color: #656c76;
-    --input-color: #272727;
-    --body-color: #121212;
-    --container-color: #272727;
-    --scroll-bar-color: #424242;
-    --scroll-thumb-color: #595959;
-    --hero-title: #f39c12;
-    --hero-subtitle: #ffffff;
-    --hero-bold: #ffffff;
-    --hero-icon: #ff7c11;
-    /*</dark mode>*/
-
-
-
-
+  --first-color: #fe7031; /* You will need to provide the corresponding hex color */
+  --first-color-light: #dbb69c; /* You will need to provide the corresponding hex color */
+  --title-color: #f2f2f2; /* You will need to provide the corresponding hex color */
+  --text-color: #656c76; /* You will need to provide the corresponding hex color */
+  --input-color: #272727; /* You will need to provide the corresponding hex color */
+  --body-color: #121212; /* You will need to provide the corresponding hex color */
+  --container-color: #272727; /* You will need to provide the corresponding hex color */
+  --scroll-bar-color: #424242; /* You will need to provide the corresponding hex color */
+  --scroll-thumb-color: #595959; /* You will need to provide the corresponding hex color */
+  --hero-title: #f39c12 ;
+  --hero-subtitle: #ffffff ;
+  --hero-bold: #ffffff;
+  --hero-icon: #ff7c11 ;
+  /*</dark mode>*/
 }
 .hero__image__dark {
   display: none;

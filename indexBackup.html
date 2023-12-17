@@ -1,0 +1,692 @@
+<html lang="en"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--==================== EMAIL SERVICE ====================-->
+        <!-- Email.JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init('GBk_Bz7_Q8cZU6TcT');
+            })();
+        </script>
+
+        <!--==================== TITLE and Favicon ====================-->
+        <title>Simo Hakim's Portal 👋</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+    </head>
+
+    <body>
+        <!--==================== HERO SECTION ====================-->
+        <section class="hero">
+            <img src="assets/img/landscape.png" alt="Landscape" class="hero__image">
+            <img src="assets/img/landscape2.png" alt="Landscape" class="hero__image__dark">
+            <div class="hero__overlay">
+                <h1 id="hero-title">Welcome to <span>Simo Hakim</span>'s Portal</h1>
+                <p id="hero-subtitle">Witness the start of a new career</p>
+                <div class="social-icons">
+                    <div class="icon-wrapper">
+                        <a href="https://www.linkedin.com/in/simo-hakim-b7a14413b/" target="_blank" class="social-icon" id="linkedin-icon"><i class="uil uil-linkedin"></i></a>
+                    </div>
+                    <div class="icon-wrapper">
+                        <a href="https://github.com/Herbrax" target="_blank" class="social-icon" id="github-icon"><i class="uil uil-github"></i></a>
+                    </div>
+                    <div class="icon-wrapper">
+                        <a href="https://twitter.com/herbrax" target="_blank" class="social-icon" id="twitter-icon"><i class="uil uil-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="scroll-downs">
+                    <div class="mousey">
+                      <div class="scroller"></div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        
+        <!--==================== HEADER ====================-->
+        <header class="header scroll-header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Simo Hakim</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme Change Buttons -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home" data-id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/simohakim/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+
+                            <a href="https://github.com/herbrax" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path>
+
+                                    <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/prefill.png"></image>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I am Simo.</h1>
+                            <h3 class="home__subtitle">Computer Science Graduate</h3>
+                                    <p class="home__description">Passionate about cutting-edge technology and eager to be at the forefront of innovation. Former QA Team Lead at LXT AI, I am about to graduate with a B.Sc in Computer Science from the University of Montréal.</p>
+
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about" data-id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">Introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about.png" alt="Simo Hakim" class="about__img">
+
+
+                    <div class="about__data">
+                        <p class="about__description"><b>As Arthur C. Clarke once said, "Any sufficiently advanced technology is indistinguishable from magic."</b><br>This perspective shapes my approach as I near the completion of my <b>B.Sc. in Computer Science from the University of Montréal</b>. <br> After a rich experience as a <b>QA Team Lead at LXT AI</b>, I am now seeking new horizons to grow, learn, and push on that vision of mine.</p>
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/Simo-Resume.pdf" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills" data-id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">Technical Competence</span>
+            
+                <div class="skills__container container grid">
+                    <!-- Section Programming Codes -->
+                    <div class="skills__area">
+                        <h3 class="category-title">Programming Codes</h3>
+                        <div class="skills__content skills__open">
+                            <div class="skills__list grid">
+                                <!-- Python -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">Advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__80"></span>
+                                    </div>
+                                </div>
+                
+                                <!-- Java -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__number">Advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__80"></span>
+                                    </div>
+                                </div>
+                
+                                <!-- C# -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">C#</h3>
+                                        <span class="skills__number">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__60"></span>
+                                    </div>
+                                </div>
+                
+                                <!-- HTML/CSS -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML/CSS</h3>
+                                        <span class="skills__number">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__60"></span>
+                                    </div>
+                                </div>
+                
+                                <!-- Javascript -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Javascript</h3>
+                                        <span class="skills__number">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__60"></span>
+                                    </div>
+                                </div>
+                
+                                <!-- SQL -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SQL</h3>
+                                        <span class="skills__number">Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__20"></span>
+                                    </div>
+                                </div>
+                
+                
+                                <!-- Julia -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Julia</h3>
+                                        <span class="skills__number">Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__20"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Section Miscellaneous -->
+                    <div class="skills__area">
+                        <h3 class="category-title">Miscellaneous</h3>
+                        <div class="skills__content skills__open">
+                            <div class="skills__list grid">
+                                <!-- Github -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__number">Advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__80"></span>
+                                    </div>
+                                </div>
+                
+                                <!-- MS Office -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">MS Office</h3>
+                                        <span class="skills__number">Advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__80"></span>
+                                    </div>
+                                </div>
+                
+                                <!-- Sketchup -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Sketchup</h3>
+                                        <span class="skills__number">Advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__80"></span>
+                                    </div>
+                                </div>
+                
+                                <!-- Latex/Overleaf -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Latex/Overleaf</h3>
+                                        <span class="skills__number">Advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__80"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Firebase -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Firebase</h3>
+                                        <span class="skills__number">Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__20"></span>
+                                    </div>
+                                </div>
+                
+                                <!-- Android Studio -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Android Studio</h3>
+                                        <span class="skills__number">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__60"></span>
+                                    </div>
+                                </div>
+                
+                                <!-- Arduino -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Arduino</h3>
+                                        <span class="skills__number">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percantage skills__60"></span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+
+           <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualifications" data-id="qualifications">
+                <h2 class="section__title">Qualifications</h2>
+                <span class="section__subtitle">Academic and Professional Career</span>
+
+                <div class="qualification__container container">
+                    <!-- Education Content -->
+                    <div class="qualification__content qualification__active" data-content="" id="education">
+                        <h3 class="category-title">Education</h3>
+                        <!-- Baccalauréat in Economics -->
+                        <div class="qualification__data">
+                            <div>
+                                <span class="qualification__degree">Baccalauréat</span>
+                                <h3 class="qualification__title">Economics</h3>
+                                <span class="qualification__subtitle">Moroccan Education System</span>
+                                
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014-2017
+                                </div>
+                                <span class="qualification__details">Equivalent to US/CA high school, this program provided my initial insights into entrepreneurship.</span>
+
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Année Préparatoire -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Année Préparatoire</h3>
+                                <span class="qualification__subtitle">Université de Montréal</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2019
+                                </div>
+                                <span class="qualification__details">An introductory program to university-level education."</span>
+                            </div>
+                        </div>
+
+                        <!-- Minor in Sciences -->
+                        <div class="qualification__data">
+                            <div>
+                                <span class="qualification__degree">Minor</span>
+                                <h3 class="qualification__title">Sciences</h3>
+                                <span class="qualification__subtitle">University of Montreal</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019 - 2020
+                                </div>
+                                <span class="qualification__details">A concentrated focus in Computer Sciences and Physics.</span>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Certificate in Computer Sciences -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <span class="qualification__degree">Certificate</span>
+                                <h3 class="qualification__title">Applied Computer Sciences</h3>
+                                <span class="qualification__subtitle">University of Montreal</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022 - 2023
+                                </div>
+                                <span class="qualification__details">Pursued as evening classes while working at LXT AI, to continuously advance my studies.</span>
+
+                            </div>
+                        </div>
+
+                        <!-- Bachelor in Computer Sciences -->
+                        <div class="qualification__data">
+                            <div>
+                                <span class="qualification__degree">B.Sc.</span>
+                                <h3 class="qualification__title">Computer Sciences</h3>
+                                <span class="qualification__subtitle">University of Montreal</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020 - 2024
+                                </div>
+                                <span class="qualification__details">Currently enrolled, with an expected graduation date in April 2024.</span>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qualification__vertical-line"></div>
+
+                    <!-- Work Content -->
+                    <div class="qualification__content qualification__active" data-content="" id="work">
+                        <h3 class="category-title">Work</h3>
+                        <!-- Supervisor at Canada Computers -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Supervisor</h3>
+                                <span class="qualification__subtitle">Canada Computers</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2021
+                                </div>
+                                <span class="qualification__details">Guided by my passion for hardware and cutting-edge technology, I started as a team member and progressed to Supervisor at Canada Computers. This role was a significant professional journey, offering extensive learning in a dynamic retail environment.</span>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- QA Team Lead at LXT AI -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">QA Team Lead</h3>
+                                <span class="qualification__subtitle">LXT AI</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    March 2022 - September 2023
+                                </div>
+                                <span class="qualification__details">In my role at LXT AI, I oversaw a diverse team, dedicated to upholding stringent quality standards in big data processing and aligning with client objectives. I led initiatives to refine workflows and pipelines, conducted and elevated the standard of training, and developed innovative tools that effectively minimized error rates and boosted productivity.</span>
+                            </div>
+                        </div>
+                                                <!-- AEDIROUM -->
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Deputy Internal VP & Graduating Students Representative</h3>
+                                <span class="qualification__subtitle">AEDIROUM</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    September 2023 -
+                                </div>
+                                <span class="qualification__details">Implication in my student association as the representative for the graduating students and as a member of the Representation Committee</span>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--==================== TESTIMONIALS ====================-->
+            <section class="testimonial section" id="testimonials" data-id="testimonials">
+                <h2 class="section__title">References</h2>
+                <span class="section__subtitle">Testimonials</span>
+            
+                <div class="testimonial__container container">
+                    <!--==================== TESTIMONIAL 1 ====================-->
+                    <div>
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="assets/img/default-woman.png" alt="" class="testimonial__img">
+                                <div>
+                                    <h3 class="testimonial__name">Mr. Lorem Ipsum</h3>
+                                    <span class="testimonial__client">Canada Computers, Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+            
+                    <!--==================== TESTIMONIAL 2 ====================-->
+                    <div>
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="assets/img/default-man.png" alt="" class="testimonial__img">
+                                <div>
+                                    <h3 class="testimonial__name">Dr. Tempor Ut Labore </h3>
+                                    <span class="testimonial__client">LXT AI, Team Lead</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+                    </div>
+            
+                    <!-- Add two more testimonials similar to the above format -->
+                    <!--==================== TESTIMONIAL 3 ====================-->
+                    <div>
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="assets/img/default-woman.png" alt="" class="testimonial__img">
+                                <div>
+                                    <h3 class="testimonial__name">Dr. Dolor Sit Amet</h3>
+                                    <span class="testimonial__client">LXT AI, QA Leader</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial__description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+            </section>
+            
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact" data-id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in Touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">+1 (438) 812-9242</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <p><a class="contact__subtitle" href="mailto:me@simohakim.com">me@simohakim.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Montreal, Canada</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Full Name</label>
+                                <input type="text" placeholder="Enter full name" class="contact__input" id="fullName" onkeyup="validateName()">
+                                <span id="name-error" class="contact__subtitle"></span>
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" placeholder="Enter email address" class="contact__input" id="email_id" onkeyup="validateEmail()">
+                                <span id="email-error" class="contact__subtitle"></span>
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Subject</label>
+                            <input type="text" id="subject" placeholder="Enter a subject line" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" cols="0" rows="7" placeholder="Enter your message" class="contact__input" id="message" onkeyup="validateMessage()"></textarea>
+                            <span id="message-error" class="contact__subtitle"></span>
+                        </div>
+                        <div>
+                            <a onclick="return SendMail()" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <a href="#" class="footer__title">Simo Hakim</a><br>
+                        <span class="footer__subtitle">Computer Science Graduate</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#qualifications" class="footer__link">Qualifications</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="footer__link">References</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                        <li>
+
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/simohakim/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://github.com/herbrax" target="_blank" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <p class="footer__copy">© All rights reserved. V 0.1</p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+
+

@@ -1,0 +1,142 @@
+{
+    "personalInfo": {
+      "surname": "Simo",
+      "lastname":"Hakim",
+      "title": "Computer Science Graduate",
+      "contact": {
+        "phone": "+1 (438) 812-9242",
+        "email": "me@simohakim.com",
+        "location": "Montreal, Canada"
+      }
+    },
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/simo-hakim-b7a14413b/",
+      "github": "https://github.com/Herbrax",
+      "twitter": "https://twitter.com/herbrax"
+    },
+    "home": {
+      "prefillImage": "assets/img/prefill.png",
+      "description": "Passionate about cutting-edge technology and eager to be at the forefront of innovation. Former QA Team Lead at LXT AI, I am about to graduate with a B.Sc in Computer Science from the University of Montréal.      "
+    },
+    "about": {
+      "image": "assets/img/about.png",
+      "description": "As Arthur C. Clarke once said, 'Any sufficiently advanced technology is indistinguishable from magic.' This perspective shapes my approach as I near the completion of my B.Sc. in Computer Science from the University of Montréal. After a rich experience as a QA Team Lead at LXT AI, I am now seeking new horizons to grow, learn, and push on that vision of mine.",
+      "resumeLink": "assets/pdf/Simo-Resume.pdf"
+    },
+    "skills": [
+      {
+        "category": "Programming Codes",
+        "skills": [
+          {"name": "Python", "level": "Advanced"},
+          {"name": "Java", "level": "Advanced"},
+          {"name": "C#", "level": "Intermediate"},
+          {"name": "HTML/CSS", "level": "Intermediate"},
+          {"name": "Javascript", "level": "Intermediate"},
+          {"name": "SQL", "level": "Beginner"},
+          {"name": "Julia", "level": "Beginner"}
+        ]
+      },
+      {
+        "category": "Miscellaneous",
+        "skills": [
+          {"name": "Git", "level": "Advanced"},
+          {"name": "MS Office", "level": "Advanced"},
+          {"name": "Sketchup", "level": "Advanced"},
+          {"name": "Latex/Overleaf", "level": "Advanced"},
+          {"name": "Firebase", "level": "Beginner"},
+          {"name": "Android Studio", "level": "Intermediate"},
+          {"name": "Arduino", "level": "Intermediate"}
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Sc.",
+        "field": "Computer Sciences",
+        "institution": "University of Montreal",
+        "year": "2020 - 2024",
+        "details": "Currently pursuing, with an anticipated completion in April 2024."
+      },
+      {
+        "degree": "Certificate",
+        "field": "Applied Computer Sciences",
+        "institution": "University of Montreal",
+        "year": "2022 - 2023",
+        "details": "Completed as part-time evening courses alongside my role at LXT AI, for ongoing academic development."
+      },
+      {
+        "degree": "Minor",
+        "field": "Sciences",
+        "institution": "University of Montreal",
+        "year": "2019 - 2020",
+        "details": "A concentrated focus in Computer Sciences and Physics."
+      }
+    ],
+    "workExperience": [
+      {
+        "position": "Deputy Internal VP + Graduating Students Representative",
+        "company": "AEDIROUM",
+        "years": "2023 - Present",
+        "details": "Engaged in my student association as the representative for graduating students and as a member of the Representation Committee, contributing to the advocacy and support of student interests and needs."
+      },
+      {
+        "position": "Quality Team Lead: GCP Subprocessor Speech-To-Text",
+        "company": "LXT AI",
+        "years": "2022 - 2023",
+        "details": "Oversaw a team of 20, upholding high-quality standards in big data processing, closely aligned with client objectives. Led initiatives to enhance workflows and data processing pipelines, resulting in improved efficiency and accuracy. Developed and implemented tools and trainings that reduced error rates by 20% and increased overall team productivity."
+      },
+      {
+        "position": "Supervisor",
+        "company": "Canada Computers",
+        "years": "2019 - 2021",
+        "details": "Driven by a fervent interest in hardware and cutting-edge technologies, leveraged product knowledge and interpersonal skills to deliver exemplary customer experience while aligning with management expectations."
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Mr. Lorem Ipsum",
+        "role": "Canada Computers, Manager",
+        "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "assets/img/default-woman.png"
+      },
+      {
+        "name": "Dr. Tempor Ut Labore",
+        "role": "LXT AI, Team Lead",
+        "testimonial": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.",
+        "image": "assets/img/default-man.png"
+      }
+    ],
+    "colors": {
+        "light": {
+            "first-color": "#022f66",
+            "first-color-light": "#8da7c7",
+            "title-color": "#111111",
+            "text-color": "#737373",
+            "input-color": "#e6f1ff",
+            "body-color": "#ffffff",
+            "container-color": "#fafafa",
+            "scroll-bar-color": "#e6e6e6",
+            "scroll-thumb-color": "#cccccc",
+            "hero-title": "#9fb1b6",
+            "hero-subtitle": "#9bb1b3",
+            "hero-bold": "#435052",
+            "hero-icon": "#abc3dc"
+        },
+        "dark": {
+            "first-color": "#fe7031",
+            "first-color-light": "#dbb69c",
+            "title-color": "#f2f2f2",
+            "text-color": "#656c76",
+            "input-color": "#272727",
+            "body-color": "#121212",
+            "container-color": "#272727",
+            "scroll-bar-color": "#424242",
+            "scroll-thumb-color": "#595959",
+            "hero-title": "#f39c12",
+            "hero-subtitle": "#ffffff",
+            "hero-bold": "#ffffff",
+            "hero-icon": "#ff7c11"
+        }
+    }
+}
+  
