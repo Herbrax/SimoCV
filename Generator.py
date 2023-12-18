@@ -395,17 +395,22 @@ def export_latex_with_json_data(json_data, latex_output_path):
         file.write(latex_document)
 
 #################################
-# 1. Load the JSON : 
-json_data = {}
-with open('data.json', 'r') as file:
-    json_data = json.load(file)
-
-# 2. Load CSS, HTML Input and Output paths : 
+# 1. Load CSS, HTML Input and Output paths : 
+json_input_path = 'data.json'
+json_input_path = 'FakePersona.json'
 css_input_path = 'assets/css/styles.css'
 css_output_path = 'assets/css/styles.css'
+css_output_path = 'assets/css/styles2.css'
 html_input_path = 'input.html'
 html_output_path = 'index.html'
+html_output_path = 'index2.html'
 latex_output_path = 'main.tex'
+latex_output_path = 'FakePersona.tex'
+
+# 2. Load the JSON
+json_data = {}
+with open(json_input_path, 'r') as file:
+    json_data = json.load(file)
 
 # 3. Update the CSS with json colors data :
 update_css_with_json_colors(json_data, css_input_path, css_output_path)
