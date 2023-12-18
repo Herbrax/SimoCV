@@ -1,0 +1,145 @@
+{
+  "personalInfo": {
+    "surname": "Alex",
+    "lastname": "Johnson",
+    "title": "Software Engineering Specialist",
+    "languages": ["English", "Spanish"],
+    "contact": {
+      "phone": "+1 (555) 123-4567",
+      "email": "alex.johnson@example.com",
+      "location": "San Francisco, CA, USA",
+      "address": "1234 Tech Lane, Suite 567, San Francisco, CA, 94102, USA"
+    }
+  },
+  "socialLinks": {
+    "linkedin": "https://www.linkedin.com/in/alex-johnson/",
+    "github": "https://github.com/AlexJohnsonTech",
+    "twitter": "https://twitter.com/AlexJTech"
+  },
+  "home": {
+    "description": "With a Master's in Software Engineering from MIT and a passion for innovative technology, I'm eager to contribute to cutting-edge projects and drive impactful solutions in the tech industry."
+  },
+  "about": {
+    "description": "I'm Alex Johnson, a dedicated software engineer with a focus on AI and machine learning. My journey through the world of tech has been marked by relentless learning and the drive to apply my skills in real-world scenarios, especially in the field of AI-driven technologies."
+  },
+  "resumeSkills": {
+    "programming": ["Python", "JavaScript", "C++", "Go", "Ruby", "React", "Node.js"],
+    "data": ["MySQL", "MongoDB", "DynamoDB", "Hadoop", "Spark"],
+    "miscellaneous": ["Docker", "Kubernetes", "AWS", "Azure", "Machine Learning", "JIRA", "Scrum"]
+  },
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "skills": [
+        {"name": "Python", "level": "Advanced"},
+        {"name": "JavaScript", "level": "Advanced"},
+        {"name": "C++", "level": "Intermediate"},
+        {"name": "Go", "level": "Intermediate"}
+      ]
+    },
+    {
+      "category": "Data Management",
+      "skills": [
+        {"name": "MySQL", "level": "Advanced"},
+        {"name": "MongoDB", "level": "Intermediate"},
+        {"name": "Hadoop", "level": "Beginner"}
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc.",
+      "field": "Software Engineering",
+      "institution": "Massachusetts Institute of Technology (MIT)",
+      "year": "2018 - 2020",
+      "details": "Focused on advanced software development, AI, and machine learning.",
+      "showInResume": "Y"
+    },
+    {
+      "degree": "B.Sc.",
+      "field": "Computer Science",
+      "institution": "University of California, Berkeley",
+      "year": "2014 - 2018",
+      "details": "Specialized in software development and computer systems.",
+      "showInResume": "Y"
+    }
+  ],
+  "workExperience": [
+    {
+      "position": "Lead Software Engineer",
+      "company": "Tech Innovations Inc.",
+      "years": "2021 - Present",
+      "details": "Leading a team of engineers in developing AI-powered applications.",
+      "resumeDetails": "Guiding project direction and implementing best practices in software development, with a focus on AI and ML integration.",
+      "showInResume": "Y"
+    },
+    {
+      "position": "Software Developer",
+      "company": "NextGen Solutions",
+      "years": "2020 - 2021",
+      "details": "Developed and maintained high-performance software solutions.",
+      "resumeDetails": "Worked on various projects, focusing on backend development and cloud integration, delivering robust and scalable software.",
+      "showInResume": "Y"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Jane Doe",
+      "role": "CTO, Tech Innovations Inc.",
+      "testimonial": "Alex's contribution to our AI projects has been invaluable. His innovative thinking and technical expertise have driven our success.",
+      "image": "assets/img/default-woman.png"
+    },
+    {
+      "name": "John Smith",
+      "role": "Senior Developer, NextGen Solutions",
+      "testimonial": "Working with Alex was a learning experience. His code is not only efficient but also elegantly written and easy to understand.",
+      "image": "assets/img/default-man.png"
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI-Driven Market Analysis Tool",
+      "description": "Led the development of an AI tool for real-time market analysis, implementing machine learning algorithms for predictive analytics."
+    },
+    {
+      "name": "Cloud Infrastructure Optimization",
+      "description": "Developed a set of scripts and tools for optimizing cloud resource usage, reducing operational costs by 30%."
+    },
+    {
+      "name": "E-commerce Website Revamp",
+      "description": "Revamped the backend of a major e-commerce site, improving scalability and performance."
+    }
+  ],
+  "colors": {
+    "light": {
+      "first-color": "#4A90E2",
+      "first-color-light": "#AECBFA",
+      "title-color": "#333333",
+      "text-color": "#555555",
+      "input-color": "#F5F5F5",
+      "body-color": "#FFFFFF",
+      "container-color": "#F0F0F0",
+      "scroll-bar-color": "#E0E0E0",
+      "scroll-thumb-color": "#CCCCCC",
+      "hero-title": "#4A4A4A",
+      "hero-subtitle": "#727272",
+      "hero-bold": "#5A5A5A",
+      "hero-icon": "#8F8F8F"
+    },
+    "dark": {
+      "first-color": "#007AFF",
+      "first-color-light": "#81BEF7",
+      "title-color": "#FAFAFA",
+      "text-color": "#CCCCCC",
+      "input-color": "#333333",
+      "body-color": "#1C1C1C",
+      "container-color": "#262626",
+      "scroll-bar-color": "#3C3C3C",
+      "scroll-thumb-color": "#5C5C5C",
+      "hero-title": "#EFEFEF",
+      "hero-subtitle": "#CDCDCD",
+      "hero-bold": "#ADADAD",
+      "hero-icon": "#7B7B7B"
+    }
+  }
+}
