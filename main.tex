@@ -1,0 +1,139 @@
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+    \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+    \moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+    \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+    \usepackage[utf8]{inputenc}
+    \usepackage{fontawesome}
+    \usepackage{fontspec}
+    \usepackage{tabularx}
+    \usepackage{ragged2e}
+    \usepackage[scale=0.9]{geometry}
+    \usepackage{multicol}
+    \usepackage{import}
+    \usepackage{color}
+    \definecolor{DarkBlue}{rgb}{0, 0, 0.7}
+    \newcommand*{\customcventry}[7][.25em]{
+    \begin{tabular}{@{}l} 
+        {\bfseries #4}
+    \end{tabular}
+    \hfill% move it to the right
+    \begin{tabular}{l@{}}
+        {\bfseries #5}
+    \end{tabular} \\
+    \begin{tabular}{@{}l} 
+        {\itshape #3}
+    \end{tabular}
+    \hfill% move it to the right
+    \begin{tabular}{l@{}}
+        {\itshape #2}
+    \end{tabular}
+    \ifx&#7&%
+    \else{\\%
+        \begin{minipage}{\maincolumnwidth}%
+        \footnotesize #7%
+        \end{minipage}}\fi%
+    \par\addvspace{#1}}
+    \newcommand*{\customcvproject}[4][.25em]{
+    %   \vfill\noindent
+    \begin{tabular}{@{}l} 
+        {\small\bfseries #2} % Apply small font size to the project title
+    \end{tabular}
+    \hfill% move it to the right
+    \begin{tabular}{l@{}}
+        {\footnotesize\itshape #3} % Apply small font size to the project date
+    \end{tabular}
+    \ifx&#4&%
+    \else{\\%
+        \begin{minipage}{\maincolumnwidth}%
+        \footnotesize #4 %Apply small font size to the project description
+        \end{minipage}}\fi%
+    \par\addvspace{#1}}
+    \setlength{\tabcolsep}{12pt}
+    % Personal Data/ %
+    \name{Simo}{Hakim}
+    \address{4390 Grand Boulevard, unit 302, H4B 2X8, Montreal, QC, Canada}
+    % Personal Data\ %
+
+    \begin{document}
+
+    \makecvtitle
+    \vspace*{-23mm}
+    
+    \begin{center}
+    \begin{tabular}{ c c c c }
+    % Contact line/ %
+    \faLanguage\enspace English, French &\faEnvelopeO\enspace me@simohakim.com & \faGithub\enspace \href{https://github.com/Herbrax}{GitHub} & \faMobile\enspace +1 (438) 812-9242 \\
+    % Contact Line\ %
+    \end{tabular}
+    \end{center}
+    
+    \section{ABOUT}
+    % About Section/ %
+    As I approach the completion of my Computer Science degree at the University of Montreal, I'm on the lookout for a Software Engineering internship where I can further build my stack and dive into real-world projects.
+    % About Section\ %
+    
+    \section{SKILLS}
+    % Resume Skills/ %
+    \textbf{Programming:} Python, Java, C, C#, Lua, HTML/CSS, Javascript, Typescript, Julia\\*
+    \textbf{Data:} SQL, Firebase, Tensorflow, PyTorch, Pandas, Numpy\\*
+    \textbf{Miscellaneous:} Git, Android Studio, Arduino/ESP32, Raspberry Pi, SketchUp, Photoshop, LaTeX, Agile
+    % Resume Skills\ %
+    \section{EDUCATION}
+% Education/ %
+{\customcventry{2020 - 2024}{B.Sc. in Computer Sciences}{University of Montreal}{}{}
+{Currently pursuing, with an anticipated completion in April 2024.}
+}
+{\customcventry{2022 - 2023}{Certificate in Applied Computer Sciences}{University of Montreal}{}{}
+{Completed as part-time evening courses alongside my role at LXT AI, for ongoing academic development.}
+}
+{\customcventry{2019 - 2020}{Minor in Sciences}{University of Montreal}{}{}
+{A concentrated focus in Computer Sciences and Physics.}
+}
+% Education\ %
+\section{EXPERIENCE}
+% Experience/ %
+{\customcventry{2023 - Present}{Deputy Internal VP + Graduating Students Representative}{AEDIROUM}{Montreal, QC}{}
+{\begin{itemize}
+    \item Engaged in my student association as the representative for graduating students and as a member of the Representation Committee, contributing to the advocacy and support of student interests and needs.
+\end{itemize}
+}}
+{\customcventry{2022 - 2023}{Quality Team Lead: GCP Subprocessor Speech-To-Text}{LXT AI}{Montreal, QC}{}
+{\begin{itemize}
+    \item Oversaw a team of 20, upholding high-quality standards in big data processing, closely aligned with client objectives
+    \item Led initiatives to enhance workflows and data processing pipelines, resulting in improved efficiency and accuracy
+    \item Developed and implemented tools and trainings that reduced error rates by 20% and increased overall team productivity.
+\end{itemize}
+}}
+{\customcventry{2019 - 2021}{Supervisor}{Canada Computers}{Montreal, QC}{}
+{\begin{itemize}
+    \item Driven by a fervent interest in hardware and cutting-edge technologies, leveraged product knowledge and interpersonal skills to deliver exemplary customer experience while aligning with management expectations.
+\end{itemize}
+}}
+% Experience\ %
+\section{PROJECTS}
+% Projects/ %
+{\customcvproject{Classification of Extreme Weather Events (Kaggle)}{}
+{\begin{itemize}
+  \item Engaged in a Kaggle competition aimed at the detection and classification of extreme weather events using climate data
+  \item Developed models using logistic regression, SVM linear, and XGBoost.
+\end{itemize}
+}}
+{\customcvproject{ASCII Sign Language Classification (Kaggle)}{}
+{\begin{itemize}
+  \item Participated in a Kaggle competition to classify sign language images
+  \item Implemented Random Forest and CNN models, utilizing XGBoost for enhanced performance.
+\end{itemize}
+}}
+{\customcvproject{FishHunt (JavaFX Game)}{}
+{\begin{itemize}
+  \item Developed a JavaFX-based game simulating a shark catching fish
+  \item Implemented dynamic fish movement, level progression, and a high-score system.
+\end{itemize}
+}}
+{\customcvproject{Yu-Gi-Oh Inventory CSV Manager}{}
+{\begin{itemize}
+  \item Created a script for managing a Yu-Gi-Oh card collection, integrating TCGPlayer API for detailed card information.
+\end{itemize}
+}}
+% Projects\ %
+\end{document}
