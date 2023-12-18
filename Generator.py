@@ -397,15 +397,15 @@ def export_latex_with_json_data(json_data, latex_output_path):
 #################################
 # 1. Load CSS, HTML Input and Output paths : 
 json_input_path = 'data.json'
-json_input_path = 'FakePersona.json'
+#json_input_path = 'FakePersona.json'
 css_input_path = 'assets/css/styles.css'
 css_output_path = 'assets/css/styles.css'
-css_output_path = 'assets/css/styles2.css'
+#css_output_path = 'assets/css/styles2.css'
 html_input_path = 'input.html'
 html_output_path = 'index.html'
-html_output_path = 'index2.html'
+#html_output_path = 'index2.html'
 latex_output_path = 'main.tex'
-latex_output_path = 'FakePersona.tex'
+#latex_output_path = 'FakePersona.tex'
 
 # 2. Load the JSON
 json_data = {}
