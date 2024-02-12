@@ -475,6 +475,7 @@ img {
   row-gap: 0;
   display: flex; /* Utilisez Flexbox */
   justify-content: space-between; /* Espacement entre les éléments */
+  flex-flow: row wrap; /* défini la direction du wrap */
   align-items: flex-start; /* Alignement vertical au début */
 }
 
