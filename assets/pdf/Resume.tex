@@ -1,0 +1,107 @@
+\documentclass[11pt,a4paper,roman]{moderncv}
+  \moderncvstyle{banking}
+  \moderncvcolor{blue}
+  \nopagenumbers{}
+  \usepackage[scale=0.90]{geometry}
+  \usepackage{color}
+  \newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill
+  \begin{tabular}{l@{}}
+    {\bfseries #5}
+  \end{tabular}\\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill
+  \begin{tabular}{l@{}}
+    {\itshape #2}
+  \end{tabular}
+  \ifx&#7&
+  \else{
+    \begin{minipage}{\maincolumnwidth}
+      \footnotesize #7
+    \end{minipage}}\fi
+  \par\addvspace{#1}
+  }
+  \newcommand*{\customcvproject}[4][.25em]{
+  \begin{tabular}{@{}l} 
+    {\small\bfseries #2} 
+  \end{tabular}
+  \hfill
+  \begin{tabular}{l@{}}
+    {\footnotesize\itshape #3}
+  \end{tabular}
+  \ifx&#4&
+  \else{\
+    \begin{minipage}{\maincolumnwidth}%
+      \footnotesize #4
+    \end{minipage}}\fi
+  \par\addvspace{#1}
+  }
+  \setlength{\tabcolsep}{12pt}
+  
+  \name{Simo}{Hakim}
+  \address{4390 Grand Boulevard, unit \#302, H4B 2X8, Montreal, QC}
+  \begin{document}
+  \makecvtitle
+  \vspace*{-23mm}
+  
+  \begin{center}
+  \begin{tabular}{ c c c c c }\faLanguage\enspace French, English& \faEnvelopeO\enspace me@simohakim.com& \href{https://linkedin.com/in/simo-hakim-b7a14413b/}{\faLinkedinSquare} & \href{https://github.com/Herbrax}{\faGithub} & \faMobile\enspace +1 (438) 814-1337 \\
+  \end{tabular}
+  \end{center}
+  
+  \section{ABOUT}
+  As I approach the completion of my Computer Science degree at the University of Montreal, I’m on the lookout for a Software Engineering internship where I can further build my stack and dive into real-world projects.
+  \section{SKILLS}
+\textbf{Programming:} Python, Java, C, C\#, Lua, HTML/CSS, Javascript, Typescript, Julia\\
+\textbf{Data:} SQL, Firebase, Tenserflow, PyTorch, Pandas, Numpy\\
+\textbf{Miscellaneous:} Git, Android Studio, Arduino/ESP32, Raspberry Pi, SketchUp, Photoshop, LaTeX, Agile
+\section{EDUCATION}
+\customcventry{2020 - 2024}{B.Sc. in Computer Sciences}{University of Montreal}{}{}{Currently pursuing, with an anticipated completion in 2024.}
+\customcventry{2022 - 2023}{Certificate in Applied Computer Sciences}{University of Montreal}{}{}{Completed as part-time evening courses alongside my role at LXT AI, for ongoing academic development.}
+\section{WORK EXPERIENCE}
+\customcventry{2023 - Present}{Deputy Internal VP + Graduating Students Representative}{AEDIROUM (Student Association)}{Montreal, QC}{}{Engaged in my student association as the representative for graduating students and as a member of the Representation Committee, contributing to the advocacy and support of student interests and needs}
+\customcventry{2022 - 2023}{Quality Team Lead}{LXT AI}{Montreal, QC}{}{{
+      \begin{itemize}
+        \item Oversaw a team of 20, upholding high-quality standards in big data processing, closely aligned with client objectives
+\item Led initiatives to enhance workflows and data processing pipelines, resulting in improved efficiency and accuracy
+\item Developed and implemented tools and trainings that reduced error rates by 20\%
+      \end{itemize}
+    }}
+\customcventry{2019 - 2021}{Supervisor}{Canada Computers}{Montreal, QC}{}{Driven by a fervent interest in hardware and cutting-edge technologies, leveraged product knowledge and interpersonal skills to deliver exemplary customer experience while aligning with management expectations.}
+\section{PROJECTS}
+\customcvproject{Classification of Extreme Weather Events (Kaggle)}{}{{
+      \begin{itemize}
+        \item Engaged in a Kaggle competition aimed at the detection and classification of extreme weather events using climate data.
+\item Developed models using logistic regression, SVM linear, and XGBoost.
+      \end{itemize}
+    }}
+\customcvproject{ASCII Sign Language Classification (Kaggle)}{}{{
+      \begin{itemize}
+        \item Participated in a Kaggle competition to classify sign language images.
+\item Implemented Random Forest and CNN models, utilizing XGBoost for enhanced performance
+      \end{itemize}
+    }}
+\customcvproject{FishHunt (JavaFX Game)}{}{{
+      \begin{itemize}
+        \item Made a JavaFX-based game simulating a shark catching fish with dynamic animation, level progression, and a high-score system.
+      \end{itemize}
+    }}
+\customcvproject{SimoHakim.com}{}{{
+      \begin{itemize}
+        \item Created a personal website, SimoHakim.com, to showcase my professional portfolio and academic background. 
+\item Made a companion Python tool to generate clones of the website based on a single JSON file.
+      \end{itemize}
+    }}
+\customcvproject{ResumeTurbo.com}{}{{
+      \begin{itemize}
+        \item Developed ''ResumeTurbo.com'', a dynamic online resume generator.
+\item Utilized SwiftLaTeX, a WebAssembly LaTeX Compiler, for real-time LaTeX rendering, enabling users to see instant previews of their resumes as they input their information.
+\item Integrated Mozilla's PDF.js for cross-platform PDF viewing capabilities.
+      \end{itemize}
+    }}
+  \end{document}
